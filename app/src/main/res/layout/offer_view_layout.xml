@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewImageOffer"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleViewOffer" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/priceViewOffer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idOffer"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:id="@+id/editOffer"
+        android:text="edit offer"/>
+
+
+</LinearLayout>

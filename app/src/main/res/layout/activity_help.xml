@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    
+    tools:context="com.f7.outsiderz.tecoutz.HelpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTACT"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:paddingTop="110dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/contacttext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us on mail for purchase information."
+        android:layout_below="@+id/contacttext"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:textColor="#000000"
+        android:id="@+id/purtext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mail:7.outsiderz@gmail.com"
+        android:layout_below="@+id/purtext"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/mailtext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mailtext"
+        android:text="Like us on following:"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:id="@+id/liketext"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:src="@drawable/insta"
+            android:layout_marginTop="31dp"
+            android:id="@+id/insta"
+            android:tag="http://www.insagram.com"
+            android:onClick="openBrowser"
+            android:layout_below="@+id/liketext"
+            android:layout_alignLeft="@+id/liketext"
+            android:layout_alignStart="@+id/liketext" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:src="@drawable/facebook"
+        android:tag="http://www.facebook.com"
+        android:onClick="openBrowser"
+        android:layout_alignTop="@+id/insta"
+        android:layout_alignRight="@+id/liketext"
+        android:layout_alignEnd="@+id/liketext" />
+
+</RelativeLayout>
